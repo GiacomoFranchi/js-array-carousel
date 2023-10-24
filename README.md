@@ -16,4 +16,4 @@ Aggiungere il **ciclo infinito** del carosello. Ovvero se è attiva la prima imm
  Creare un array contenente le immagini da inserire nel carosello
 
 ## Logica del programma:
-
+1. apro un ciclo 
