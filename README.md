@@ -14,6 +14,20 @@ Aggiungere il **ciclo infinito** del carosello. Ovvero se è attiva la prima imm
 
 ## Raccolota dati
  Creare un array contenente le immagini da inserire nel carosello
+ creare la costante img
+ e il contatore imgActive
 
 ## Logica del programma:
-1. apro un ciclo 
+1. aprire un ciclo for per visualizzare tutti gli elementi dell'array. 
+    - quando i = 0 all'interno di HTML dovremo visualizzare il primo elemento dell'array
+2. inserire un event listener che si attiva cliccando su .next
+    - per prima cosa rimuovere .active (che mostra in pagina l'elemento 0 dell'array)
+    -creare un contatore che parte da 0 e aumenta a ogni click cosi da poter associare al contatore gli elementi presenti nell'array così da poter visualiuzzare le diverse immagini
+    - creare un loop infinito ponendo il contatore = 0 quando è maggiore del numero degli elementi presenti nell'array
+3. inserire un event listener che si attiva cliccando su .prev
+    - per prima cosa rimuovere .active (che mostra in pagina l'elemento 0 dell'array)
+    - creare una condizione per cui se il contatore diventa un numero negativo il suo valore diventa uguale al numero di elementi presenti nell'array -1
+    - associare al contatore gli elementi presenti nell'array così da poter visualiuzzare le diverse immagini
+
+## Output
+aggiungere al div con classe item e il riferimento all'elemento dell'array la classe active
